@@ -1,0 +1,118 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#box1
+{
+    border:2px solid black;
+    height:90%;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(pink,red,red);
+}
+#box2
+{
+    border:2px dotted black;
+    height:80%;
+    width:40%;
+    background-color: aliceblue;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    padding-left:70px;
+    padding-top:50px;
+}
+h1
+{
+    position: absolute;
+    top:50px;
+    left:700px;
+    color:white;
+    animation-name: textwaves;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    transition:step-end;
+}
+span
+{
+    animation-name: waves;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+@keyframes waves 
+{
+    0%
+    {
+        color:black;
+    }
+    50%
+    {
+       color:white;
+    }
+    100%
+    {
+        color:red;
+        background-color:transparent;
+        border-radius:0%;
+    }
+}
+@keyframes textwaves 
+{
+    0%
+    {
+        color:white;
+    }
+    50%
+    {
+       color:red;
+    }
+    100%
+    {
+        color:black;
+
+    }
+}
+input
+{
+    height:50px;
+    width:350px;
+    margin-bottom:50px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    color:red
+}
+button
+{
+    height:50px;
+    width:350px;
+}
+#output
+{
+    height:300px;
+    width:350px;
+    border:1px solid black;
+    position:absolute;
+    top:200px;
+    background-color: red;
+    color:white;
+    font-size:50px;
+    text-align: center;
+    justify-content: center;
+    display:none;
+}
